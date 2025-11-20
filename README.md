@@ -19,6 +19,21 @@ An interactive React + TypeScript app that teaches options basics to teens using
 
 4. Open the printed URL (usually http://localhost:5173) to explore the lessons and interactive payoff graph.
 
+### Viewing on an iPad or another device
+
+To try the app on an iPad while developing locally:
+
+1. Start the dev server and bind it to your network interface:
+
+   ```bash
+   npm run dev -- --host
+   ```
+
+2. Find your computer's local IP address (e.g., `192.168.1.50`).
+3. On your iPad (connected to the same Wi‑Fi), open `http://<your-ip>:5173`.
+
+If you prefer to preview a production build, run `npm run preview -- --host` and visit the same IP:port from the iPad.
+
 > **Note:** The styling uses Tailwind utility classes loaded from the CDN in `src/index.css` so you can run the app without setting up a Tailwind build step.
 
 ## Scripts
